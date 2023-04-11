@@ -260,6 +260,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qh8-ES-ARc">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.069261156300000001" green="0.098585008739999994" blue="0.066562691830000006" alpha="0.84857152199999997" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -11,6 +11,10 @@ import UIKit
 class LoginController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.title = Names.Navigation.title
+        navInit()
+    }
+    
+    func navInit() {
+        navigationItem.title = Names.Navigation.title
     }
 }
