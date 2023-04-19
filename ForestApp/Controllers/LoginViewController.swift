@@ -1,5 +1,5 @@
 //
-//  RegisterController.swift
+//  LoginController.swift
 //  ForestApp
 //
 //  Created by Robert Franczak on 11/04/2023.
@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class RegisterController: UIViewController {
-
+class LoginViewController : UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navInit()
@@ -17,6 +17,5 @@ class RegisterController: UIViewController {
     
     func navInit() {
         navigationItem.title = Names.Navigation.title
-        navigationItem.backBarButtonItem?.tintColor = .black
     }
 }

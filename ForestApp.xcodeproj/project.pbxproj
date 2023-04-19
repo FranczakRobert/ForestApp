@@ -9,28 +9,32 @@
 /* Begin PBXBuildFile section */
 		19C2785829E5ACF10055C578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2785729E5ACF10055C578 /* AppDelegate.swift */; };
 		19C2785A29E5ACF10055C578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2785929E5ACF10055C578 /* SceneDelegate.swift */; };
-		19C2785C29E5ACF10055C578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2785B29E5ACF10055C578 /* ViewController.swift */; };
+		19C2785C29E5ACF10055C578 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2785B29E5ACF10055C578 /* WelcomeViewController.swift */; };
 		19C2785F29E5ACF10055C578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C2785D29E5ACF10055C578 /* Main.storyboard */; };
 		19C2786129E5ACF30055C578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C2786029E5ACF30055C578 /* Assets.xcassets */; };
 		19C2786429E5ACF30055C578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C2786229E5ACF30055C578 /* LaunchScreen.storyboard */; };
 		19C2786D29E5ADA60055C578 /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2786C29E5ADA60055C578 /* Names.swift */; };
-		19C2786F29E5C3110055C578 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2786E29E5C3110055C578 /* RegisterController.swift */; };
-		19C2787129E5C4C20055C578 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2787029E5C4C20055C578 /* LoginController.swift */; };
+		19C2786F29E5C3110055C578 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2786E29E5C3110055C578 /* RegisterViewController.swift */; };
+		19C2787129E5C4C20055C578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2787029E5C4C20055C578 /* LoginViewController.swift */; };
 		19C2787429E5CBB80055C578 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19C2787329E5CBB80055C578 /* IQKeyboardManagerSwift */; };
+		19C2787629E5EB2A0055C578 /* TestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2787529E5EB2A0055C578 /* TestMain.swift */; };
+		19C2787829E5F23F0055C578 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C2787729E5F23F0055C578 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19C2785429E5ACF10055C578 /* ForestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C2785729E5ACF10055C578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19C2785929E5ACF10055C578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19C2785B29E5ACF10055C578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19C2785B29E5ACF10055C578 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		19C2785E29E5ACF10055C578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19C2786029E5ACF30055C578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19C2786329E5ACF30055C578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19C2786529E5ACF30055C578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19C2786C29E5ADA60055C578 /* Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
-		19C2786E29E5C3110055C578 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		19C2787029E5C4C20055C578 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		19C2786E29E5C3110055C578 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		19C2787029E5C4C20055C578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		19C2787529E5EB2A0055C578 /* TestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMain.swift; sourceTree = "<group>"; };
+		19C2787729E5F23F0055C578 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		19C2786B29E5ACFE0055C578 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				19C2785B29E5ACF10055C578 /* ViewController.swift */,
-				19C2786E29E5C3110055C578 /* RegisterController.swift */,
-				19C2787029E5C4C20055C578 /* LoginController.swift */,
+				19C2785B29E5ACF10055C578 /* WelcomeViewController.swift */,
+				19C2786E29E5C3110055C578 /* RegisterViewController.swift */,
+				19C2787029E5C4C20055C578 /* LoginViewController.swift */,
+				19C2787529E5EB2A0055C578 /* TestMain.swift */,
+				19C2787729E5F23F0055C578 /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C2786F29E5C3110055C578 /* RegisterController.swift in Sources */,
-				19C2787129E5C4C20055C578 /* LoginController.swift in Sources */,
-				19C2785C29E5ACF10055C578 /* ViewController.swift in Sources */,
+				19C2786F29E5C3110055C578 /* RegisterViewController.swift in Sources */,
+				19C2787129E5C4C20055C578 /* LoginViewController.swift in Sources */,
+				19C2785C29E5ACF10055C578 /* WelcomeViewController.swift in Sources */,
 				19C2785829E5ACF10055C578 /* AppDelegate.swift in Sources */,
+				19C2787829E5F23F0055C578 /* MenuViewController.swift in Sources */,
 				19C2786D29E5ADA60055C578 /* Names.swift in Sources */,
+				19C2787629E5EB2A0055C578 /* TestMain.swift in Sources */,
 				19C2785A29E5ACF10055C578 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
