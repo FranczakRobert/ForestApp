@@ -9,8 +9,15 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var loginBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initLayout()
+    }
+    
+    func initLayout() {
+        loginBtn.layer.cornerRadius = 25
     }
 }
-

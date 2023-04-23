@@ -13,10 +13,7 @@ class MenuViewController : UIViewController {
     @IBOutlet weak var nightsButton: UIView!
     @IBOutlet weak var mapsButton: UIButton!
     @IBOutlet weak var guideButton: UIButton!
-    
-    @IBAction func logOutBtnPressed(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
