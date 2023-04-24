@@ -1,23 +1,23 @@
 //
-//  GuideMenuViewController.swift
+//  CampController.swift
 //  ForestApp
 //
-//  Created by Robert Franczak on 21/04/2023.
+//  Created by Robert Franczak on 24/04/2023.
 //
+
 import Foundation
 import UIKit
 
-class GuideMenuViewController : UIViewController {
-    
+class CampController : UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let menuContainter : [GuideMenu] = [
-        GuideMenu(image: "foodGuide", description: "Forest Food"),
-        GuideMenu(image: "CampView", description: "Make Camp"),
-        GuideMenu(image: "asd",  description:  "Sample"),
-        GuideMenu(image: "Test", description: "Sample"),
-        GuideMenu(image: "asd",  description:  "Sample"),
-        GuideMenu(image: "Test", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
+        GuideMenu(image: "asd", description: "Sample"),
 
     ]
     
@@ -28,32 +28,28 @@ class GuideMenuViewController : UIViewController {
     
     func initLayout() {
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
-        navigationItem.backButtonTitle = "Guide"
+        navigationItem.backButtonTitle = "Menu"
     }
 }
-
-extension GuideMenuViewController : UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+extension CampController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuContainter.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GuideCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CampCells", for: indexPath) as! CampCollectionViewCell
         let porop = menuContainter[indexPath.row]
         cell.descriptionLabel.text = porop.description
         cell.imageView.image = UIImage(named: porop.image)
         cell.layer.cornerRadius = 30
-        
         return cell
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.size.width - 10)/2
+        let size = (collectionView.frame.size.width - 10)
         collectionView.backgroundColor = UIColor(named: "Red")
-//        collectionView.backgroundColor = UIColor.clear
         return CGSize(width: size, height: size)
     }
     
@@ -62,13 +58,11 @@ extension GuideMenuViewController : UICollectionViewDelegate, UICollectionViewDa
         
         switch indexPath.row {
         case 0:
-            performSegue(withIdentifier: "goFood", sender: self)
-            break;
-        case 1:
             performSegue(withIdentifier: "goCamp", sender: self)
+            break;
         default:
             print("No Segue")
         }
+        
     }
 }
-

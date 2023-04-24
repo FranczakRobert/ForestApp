@@ -14,7 +14,7 @@ class FoodViewController : UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let menuContainter : [GuideMenu] = [
-        GuideMenu(image: "mushroom", description: "GRZBYKI"),
+        GuideMenu(image: "mushroom", description: "Mushrooms"),
         GuideMenu(image: "Test", description: "Second Cell"),
         GuideMenu(image: "asd", description: "First Cell"),
         GuideMenu(image: "Test", description: "Second Cell"),
@@ -39,7 +39,7 @@ extension FoodViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cel", for: indexPath) as! FoodCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "foodCells", for: indexPath) as! FoodCollectionViewCell
         let porop = menuContainter[indexPath.row]
         cell.descriptionLabel.text = porop.description
         cell.imageView.image = UIImage(named: porop.image)

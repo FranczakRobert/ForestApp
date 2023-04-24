@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1904295F29F2FF9800043724 /* GuideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1904295E29F2FF9800043724 /* GuideMenuViewController.swift */; };
+		1983E5CC29F71E4B00A83993 /* CampController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983E5CB29F71E4B00A83993 /* CampController.swift */; };
+		1983E5CE29F71ED200A83993 /* CampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983E5CD29F71ED200A83993 /* CampCollectionViewCell.swift */; };
 		198CBBFB29F6B28700EA888D /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198CBBFA29F6B28700EA888D /* FoodViewController.swift */; };
 		198CBBFD29F6BDC300EA888D /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198CBBFC29F6BDC300EA888D /* FoodCollectionViewCell.swift */; };
 		19BE08A329F599E600B3A658 /* GuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE08A229F599E600B3A658 /* GuideCollectionViewCell.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		1904295E29F2FF9800043724 /* GuideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideMenuViewController.swift; sourceTree = "<group>"; };
+		1983E5CB29F71E4B00A83993 /* CampController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampController.swift; sourceTree = "<group>"; };
+		1983E5CD29F71ED200A83993 /* CampCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampCollectionViewCell.swift; sourceTree = "<group>"; };
 		198CBBFA29F6B28700EA888D /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		198CBBFC29F6BDC300EA888D /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		19BE08A229F599E600B3A658 /* GuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			children = (
 				198CBBFC29F6BDC300EA888D /* FoodCollectionViewCell.swift */,
 				19BE08A229F599E600B3A658 /* GuideCollectionViewCell.swift */,
+				1983E5CD29F71ED200A83993 /* CampCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				19C2787729E5F23F0055C578 /* MenuViewController.swift */,
 				1904295E29F2FF9800043724 /* GuideMenuViewController.swift */,
 				198CBBFA29F6B28700EA888D /* FoodViewController.swift */,
+				1983E5CB29F71E4B00A83993 /* CampController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,9 +208,11 @@
 				198CBBFD29F6BDC300EA888D /* FoodCollectionViewCell.swift in Sources */,
 				198CBBFB29F6B28700EA888D /* FoodViewController.swift in Sources */,
 				19C2785C29E5ACF10055C578 /* WelcomeViewController.swift in Sources */,
+				1983E5CE29F71ED200A83993 /* CampCollectionViewCell.swift in Sources */,
 				19C2785829E5ACF10055C578 /* AppDelegate.swift in Sources */,
 				19C2787829E5F23F0055C578 /* MenuViewController.swift in Sources */,
 				19BE08A329F599E600B3A658 /* GuideCollectionViewCell.swift in Sources */,
+				1983E5CC29F71E4B00A83993 /* CampController.swift in Sources */,
 				19C2786D29E5ADA60055C578 /* Names.swift in Sources */,
 				19BE08A529F59C7D00B3A658 /* GuideMenu.swift in Sources */,
 				1904295F29F2FF9800043724 /* GuideMenuViewController.swift in Sources */,
@@ -361,9 +369,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,9 +398,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
