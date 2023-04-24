@@ -21,5 +21,7 @@ class MenuViewController : UIViewController {
         nightsButton.layer.cornerRadius = 30
         mapsButton.layer.cornerRadius = 30
         guideButton.layer.cornerRadius = 30
+        navigationItem.hidesBackButton = true
+
     }
 }
