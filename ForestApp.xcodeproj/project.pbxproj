@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1904295F29F2FF9800043724 /* GuideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1904295E29F2FF9800043724 /* GuideMenuViewController.swift */; };
+		197AA1F329F826D9002A1929 /* eGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197AA1F229F826D9002A1929 /* eGuide.swift */; };
 		1983E5CC29F71E4B00A83993 /* CampController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983E5CB29F71E4B00A83993 /* CampController.swift */; };
 		1983E5CE29F71ED200A83993 /* CampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983E5CD29F71ED200A83993 /* CampCollectionViewCell.swift */; };
 		198CBBFB29F6B28700EA888D /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198CBBFA29F6B28700EA888D /* FoodViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1904295E29F2FF9800043724 /* GuideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideMenuViewController.swift; sourceTree = "<group>"; };
+		197AA1F229F826D9002A1929 /* eGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eGuide.swift; sourceTree = "<group>"; };
 		1983E5CB29F71E4B00A83993 /* CampController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampController.swift; sourceTree = "<group>"; };
 		1983E5CD29F71ED200A83993 /* CampCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampCollectionViewCell.swift; sourceTree = "<group>"; };
 		198CBBFA29F6B28700EA888D /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				19C2786529E5ACF30055C578 /* Info.plist */,
 				19C2786C29E5ADA60055C578 /* Names.swift */,
 				19BE08A429F59C7D00B3A658 /* GuideMenu.swift */,
+				197AA1F229F826D9002A1929 /* eGuide.swift */,
 			);
 			path = ForestApp;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197AA1F329F826D9002A1929 /* eGuide.swift in Sources */,
 				198CBBFD29F6BDC300EA888D /* FoodCollectionViewCell.swift in Sources */,
 				198CBBFB29F6B28700EA888D /* FoodViewController.swift in Sources */,
 				19C2785C29E5ACF10055C578 /* WelcomeViewController.swift in Sources */,

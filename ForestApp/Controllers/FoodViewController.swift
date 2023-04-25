@@ -14,13 +14,12 @@ class FoodViewController : UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let menuContainter : [GuideMenu] = [
+        GuideMenu(image: "waterFoodd", description: "Water"),
+        GuideMenu(image: "forestFruits", description: "Forest fruits"),
+        GuideMenu(image: "fishFood", description: "Fishes"),
         GuideMenu(image: "mushroom", description: "Mushrooms"),
-        GuideMenu(image: "Test", description: "Second Cell"),
-        GuideMenu(image: "asd", description: "First Cell"),
-        GuideMenu(image: "Test", description: "Second Cell"),
-        GuideMenu(image: "asd", description: "First Cell"),
-        GuideMenu(image: "Test", description: "Second Cell"),
-
+        GuideMenu(image: "PlantsFood", description: "Plants & Trees"),
+        GuideMenu(image: "teaFood", description: "Tea")
     ]
     
     override func viewDidLoad() {
@@ -57,17 +56,32 @@ extension FoodViewController : UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("[Cell nr: \(indexPath.row)]")
         
-        switch indexPath.row {
-        case 0:
+        switch indexPath.row{
+        case eGuide.WATER.rawValue:
+            performSegue(withIdentifier: "goWater", sender: self)
+            break;
+            
+        case eGuide.MUSHROOMS.rawValue:
             performSegue(withIdentifier: "goMushrooms", sender: self)
+            break;
+            
+        case eGuide.PLANTANDTREES.rawValue:
+            performSegue(withIdentifier: "goPlants", sender: self)
+            break;
+        case eGuide.TEA.rawValue:
+            performSegue(withIdentifier: "goTea", sender: self)
+            break;
+            
+        case eGuide.FRUITS.rawValue:
+            performSegue(withIdentifier: "goFruits", sender: self)
+            break;
+            
+        case eGuide.FISHES.rawValue:
+            performSegue(withIdentifier: "goFishes", sender: self)
             break;
         default:
             print("No Segue")
         }
-        
-        
-        
-    }
-    
+    }    
 }
 
